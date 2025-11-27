@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "137625795491",
+    "project_id": "aeroport-d4918",
+    "storage_bucket": "aeroport-d4918.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137625795491:android:2c27dc236825c2130f3816",
+        "android_client_info": {
+          "package_name": "com.example.aeroport_new"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxe02nxDV5m_jmrlrytV6knJ8sBh1xnd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

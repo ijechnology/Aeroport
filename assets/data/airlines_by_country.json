@@ -1,0 +1,25 @@
+{
+  "indonesia": [
+    {"name":"Garuda Indonesia","iata":"GA"},
+    {"name":"Lion Air","iata":"JT"},
+    {"name":"Citilink","iata":"QG"},
+    {"name":"Sriwijaya Air","iata":"SJ"}
+  ],
+  "singapore": [
+    {"name":"Singapore Airlines","iata":"SQ"},
+    {"name":"Scoot","iata":"TR"}
+  ],
+  "japan": [
+    {"name":"Japan Airlines","iata":"JL"},
+    {"name":"All Nippon Airways","iata":"NH"}
+  ],
+  "united states": [
+    {"name":"United Airlines","iata":"UA"},
+    {"name":"Delta Air Lines","iata":"DL"},
+    {"name":"American Airlines","iata":"AA"}
+  ],
+  "global": [
+    {"name":"Global Air","iata":"GA"},
+    {"name":"Universal Airlines","iata":"UA"}
+  ]
+}
