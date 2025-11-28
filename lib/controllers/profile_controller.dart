@@ -45,6 +45,10 @@ class ProfileController extends GetxController {
     loadProfileImage();
   }
 
+  void refreshUsername() {
+    _username.value = _authC.getUsername();
+  }
+
   // --- METODE UTAMA (Sama) ---
   void loadProfileData() {
     final savedKesanSaran = _settingsBox.get(_kesanSaranKey, defaultValue: '');
