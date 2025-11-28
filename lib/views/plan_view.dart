@@ -81,7 +81,6 @@ class PlanView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final primaryColor = Theme.of(context).primaryColor;
-    final username = profileC.username;
 
     return Scaffold(
       backgroundColor: const Color(0xFFF9FAFB), // abu lembut modern
@@ -112,14 +111,18 @@ class PlanView extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Halo, ${username.isNotEmpty ? username : 'Pengguna'} 👋',
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
+                        Obx(() {
+                          final username = profileC.username;
+                          return Text(
+                            'Halo, ${username.isNotEmpty ? username : 'Pengguna'} 👋',
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 24,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          );
+                        }),
+
                         const SizedBox(height: 6),
                         const Text(
                           'Ayo rencanakan penerbanganmu!',

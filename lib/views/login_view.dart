@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/auth_controller.dart';
+import '../controllers/profile_controller.dart';
 import 'register_view.dart';
 import 'widgets/bottom_navbar.dart';
 
@@ -53,6 +54,7 @@ class LoginView extends StatelessWidget {
                   bool success = authC.login(userC.text, passC.text);
 
                   if (success) {
+                    Get.find<ProfileController>().refreshUsername();
                     Get.offAll(() => const BottomNavbar());
                   } else {
                     Get.snackbar(
